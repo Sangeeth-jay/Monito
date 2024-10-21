@@ -17,13 +17,7 @@ import Pedigree from "../assets/Pedigree.png";
 import Img1 from "../assets/img1.png";
 import Img2 from "../assets/img2.png";
 import Img3 from "../assets/img3.png";
-import Logo from "../assets/logo.png";
-import {
-  IoLogoFacebook,
-  IoLogoTwitter,
-  IoLogoInstagram,
-  IoLogoYoutube,
-} from "react-icons/io5";
+
 
 const Home = () => {
   const navigate = useNavigate();

@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoPlayCircleOutline } from "react-icons/io5";
 import puppyImg from "../assets/puppyimg.png";
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoLogoFacebook, IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from 'react-icons/io5'
 import Logo from '../assets/logo.png'
 
