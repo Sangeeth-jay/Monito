@@ -8,6 +8,7 @@ const CategoryBanner = () => {
           <div className=" w-full h-96 md:h-80 bg-[#F6E7C1] rounded-3xl flex ">
             <img src={puppyImg} alt="" className="z-10 hidden md:block" />
             <div className="flex flex-col gap-2 py-10 px-4 text-[#003459] md:hidden">
+              {/* mobile view */}
               <h1 className="text-3xl font-bold">One More Friend</h1>
               <h1 className="text-2xl font-semibold">Thousand More Fun!</h1>
               <p className="">
@@ -37,7 +38,7 @@ const CategoryBanner = () => {
                 person who will always be with you to have fun. We have 200+
                 different pets that can meet your needs!
               </p>
-              <div className="flex gap-4 justify-end">
+              <div className="flex gap-4 justify-end mt-2">
                 <button className="bg-transparent border border-white text-white font-semibold px-4 py-2 rounded-full flex gap-1 w-fit">
                   View Intro
                   <IoPlayCircleOutline className="text-2xl" />
@@ -47,6 +48,7 @@ const CategoryBanner = () => {
                 </button>
               </div>
             </div>
+            {/* mobile view */}
             <img
               src={puppyImg}
               alt=""
