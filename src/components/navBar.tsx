@@ -1,15 +1,26 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../assets/logo.png";
 import { CiSearch } from "react-icons/ci";
 import { IoMenu, IoClose } from "react-icons/io5";
+import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const [bgColor, setBgColor] = useState("transparent");
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setBgColor("#FFE7BA");
+    } else {
+      setBgColor("transparent");
+    }
+  }, [location]);
 
   return (
     <>
-      <nav className="p-4 bg-[#FFE7BA]">
+      <nav style={{ backgroundColor: bgColor }} className="p-4">
         <div className="max-w-7xl mx-auto flex gap-16 items-center md:justify-center justify-between">
           {/* hambrger btn   */}
           <div className="md:hidden flex items-center">

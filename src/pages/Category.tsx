@@ -1,9 +1,12 @@
-// import React from 'react'
-
+import Banner from "../components/categoryBanner"
 const Category = () => {
   return (
-    <div>Category</div>
-  )
-}
+    <>
+      <div className="md:px-32 px-4 py-16">
+        <Banner />
+      </div>
+    </>
+  );
+};
 
-export default Category
+export default Category;
