@@ -1,6 +1,6 @@
 import React from "react";
 import { BsDot } from "react-icons/bs";
-
+import { useNavigate } from "react-router-dom";
 interface PetCardProps {
   bread: string;
   image: string;
@@ -10,8 +10,13 @@ interface PetCardProps {
 }
 
 const PetCard: React.FC<PetCardProps> = ({ bread, image, price, gene, age }) => {
+
+const navigate = useNavigate();
+
   return (
-    <div className="md:w-72 w-44 h-80 shadow-[0px_0px_16px_5px_rgba(166,_84,_145,_0.06)] rounded-xl p-2 flex flex-col items-start justify-between gap-3 hover:shadow-xl transition-shadow cursor-pointer">
+    <div
+    onClick={() => navigate(`/product`)}
+    className="md:w-72 w-44 h-80 shadow-[0px_0px_16px_5px_rgba(166,_84,_145,_0.06)] rounded-xl p-2 flex flex-col items-start justify-between gap-3 hover:shadow-xl transition-shadow cursor-pointer">
       <div className="w-full h-40 bg-slate-300 rounded-2xl">
         <img src={image} alt={`${bread} image`} className="w-full h-full object-cover rounded-lg" />
       </div>
