@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import HeroImg from "../assets/petwomen.png";
 import { IoPlayCircleOutline } from "react-icons/io5";
 

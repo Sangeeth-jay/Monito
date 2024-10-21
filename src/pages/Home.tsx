@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Hero from "../components/hero";
 import PetCard from "../components/petCard";
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import Banner from "../components/banner";
+// import Banner from "../components/banner";
 import ProductCard from "../components/productCard";
 import Sheba from "../assets/Sheba.png";
 import Whicks from "../assets/Whiskas.png";

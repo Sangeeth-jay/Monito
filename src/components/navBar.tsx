@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { useState } from "react";
+import { useState } from "react";
 import Logo from "../assets/logo.png";
 import { CiSearch } from "react-icons/ci";
 import { IoMenu, IoClose } from "react-icons/io5";
