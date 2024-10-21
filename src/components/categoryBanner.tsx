@@ -5,7 +5,7 @@ const CategoryBanner = () => {
   return (
     <>
         <div className="relative flex md:flex-row flex-col items-center md:justify-end justify-end">
-          <div className=" w-full h-96 md:h-80 bg-[#F6E7C1] rounded-3xl flex ">
+          <div className=" w-full h-[50vh] md:h-80 bg-[#F6E7C1] rounded-3xl flex ">
             <img src={puppyImg} alt="" className="z-10 hidden md:block" />
             <div className="flex flex-col gap-2 py-10 px-4 text-[#003459] md:hidden">
               {/* mobile view */}
@@ -27,7 +27,7 @@ const CategoryBanner = () => {
               </div>
             </div>
           </div>
-          <div className="absolute md:w-6/12 w-full md:p-10 md:h-80 h-20 bg-[#003459] rounded-tl-[70%] rounded-r-3xl flex md:flex-col flex-row md:items-end md:justify-center md:gap-2">
+          <div className="absolute md:w-6/12 w-full md:p-10 md:h-80 h-[10vh] bg-[#003459] rounded-tl-[70%] rounded-r-3xl flex md:flex-col flex-row md:items-end md:justify-center md:gap-2">
             <div className="flex flex-col gap-2 text-right hidden md:block">
               <h1 className="text-5xl font-bold text-white">One More Friend</h1>
               <h1 className="text-4xl font-semibold text-white">
@@ -52,7 +52,7 @@ const CategoryBanner = () => {
             <img
               src={puppyImg}
               alt=""
-              className="z-10 md:hidden w-full h-fit relative -top-24"
+              className="z-10 md:hidden w-full h-fit relative -top-20"
             />
           </div>
         </div>
