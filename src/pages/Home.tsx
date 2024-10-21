@@ -10,7 +10,7 @@ import ProductCard from "../components/productCard";
 import Sheba from "../assets/Sheba.png";
 import Whicks from "../assets/Whiskas.png";
 import Backers from "../assets/Bakers.png";
-import Felix from "../assets/Felix.png";
+import Felix from "../assets/felix.png";
 import GoodBoy from "../assets/GoodBoy.png";
 import Butchers from "../assets/Butchers.png";
 import Pedigree from "../assets/Pedigree.png";
