@@ -27,8 +27,27 @@ import {
 
 const Home = () => {
   const navigate = useNavigate();
-  const [pet, setPet] = useState([]);
-  const [products, setProducts] = useState([]);
+
+  interface Product {
+    name: string;
+    image: string;
+    price: number;
+    product: string;
+    size: string;
+  }
+
+  interface Pet {
+    breed: string;
+    image: string;
+    price: number;
+    gene: string;
+    age: number;
+  }
+
+  const [pet, setPet] = useState<Pet[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
+
+
 
   const fetchPet = async () => {
     try {
