@@ -17,6 +17,7 @@ import Pedigree from "../assets/Pedigree.png";
 import Img1 from "../assets/img1.png";
 import Img2 from "../assets/img2.png";
 import Img3 from "../assets/img3.png";
+import Banner2 from "../components/banner2";
 
 
 const Home = () => {
@@ -191,6 +192,8 @@ const Home = () => {
           <img src={Pedigree} alt="" className="w-20" />
         </div>
       </div>
+
+      <Banner2/>
 
       {/* use full topics */}
       <div className="md:px-32 px-4 my-10">

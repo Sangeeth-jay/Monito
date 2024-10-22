@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <div className="bg-gradient-to-t from-[#FCEED5] to-[#FFE7BA]">
-        <div className="p-4 flex flex-col md:flex-row items-center justify-center gap-16 h-screen md:px-32 py-16">
+        <div className="p-4 flex flex-col md:flex-row items-center justify-center gap-16 h-screen md:px-32 py-16 overflow-hidden">
           
           {/* Left Side: Text Content */}
           <div className="md:w-1/3 flex flex-col gap-4">
