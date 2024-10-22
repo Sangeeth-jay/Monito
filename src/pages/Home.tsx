@@ -5,7 +5,7 @@ import Hero from "../components/hero";
 import PetCard from "../components/petCard";
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-// import Banner from "../components/banner";
+import Banner from "../components/banner";
 import ProductCard from "../components/productCard";
 import Sheba from "../assets/Sheba.png";
 import Whicks from "../assets/Whiskas.png";
@@ -49,7 +49,6 @@ const Home = () => {
         "https://monitor-backend-rust.vercel.app/api/pets"
       );
       setPet(response.data);
-      console.log(response.data);
     } catch (error) {
       console.log(error);
     }
@@ -61,7 +60,6 @@ const Home = () => {
         "https://monitor-backend-rust.vercel.app/api/products"
       );
       setProducts(response.data);
-      console.log(response.data);
     } catch (error) {
       console.log(error);
     }
@@ -117,7 +115,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      {/* <Banner /> */}
+      <Banner />
 
       {/* products */}
 

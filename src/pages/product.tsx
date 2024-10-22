@@ -36,7 +36,6 @@ const Product = () => {
         "https://monitor-backend-rust.vercel.app/api/pets"
       );
       setPet(response.data);
-      console.log(response.data);
     } catch (error) {
       console.log(error);
     }
