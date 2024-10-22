@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { BsChatLeftDots } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
 import PetCard from "../components/petCard";
@@ -14,8 +14,11 @@ import {
   IoShareSocial,
 } from "react-icons/io5";
 
+
+
 const Product = () => {
   const navigate = useNavigate();
+  const { breed } = useParams<{ breed: string }>();
 
   interface Pet {
     breed: string;
@@ -88,7 +91,7 @@ const Product = () => {
             </div>
           </div>
           <div className="flex flex-col gap-2 md:w-3/5">
-            <h1 className="text-3xl text-[#091c2a] font-bold">Product Name</h1>
+            <h1 className="text-3xl text-[#091c2a] font-bold">{breed}</h1>
             <h1 className="text-2xl text-[#003459] font-semibold">Price</h1>
             <div className="flex gap-4">
               <button className="bg-[#003459] text-white font-semibold px-3 py-1 rounded-full">
@@ -105,7 +108,7 @@ const Product = () => {
                   SKU
                 </label>
                 <label htmlFor="" className="w-1/2">
-                  #11111
+                  #M4554
                 </label>
               </div>
               <hr />
