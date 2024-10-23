@@ -4,7 +4,7 @@ import { FaPaw } from "react-icons/fa";
 const Banner2 = () => {
   return (
     <>
-      <div className="md:px-32 px-4 my-4">
+      <section className="md:px-32 px-4 my-4">
         <div className="bg-[#FFB775] w-full md:h-80 h-[70vh] rounded-3xl flex md:flex-row flex-col justify-between md:overflow-hidden">
           <div className="bg-[#FCEED5] md:w-6/12 w-full md:h-80 h-3/5 md:rounded-br-[80%] rounded-br-[40%]  rounded-l-3xl">
             <div className=" flex flex-col h-full items-center justify-center md:items-start gap-2 p-4 md:p-10">
@@ -37,7 +37,7 @@ const Banner2 = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
